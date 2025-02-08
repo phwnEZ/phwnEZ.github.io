@@ -1,35 +1,37 @@
 // Sample project data
-const projects = [
+const socials = [
     {
-        name: "Project 1",
-        description: "This is a description of Project 1.",
-        link: "https://github.com/phwnEZ/hemptopia"
+        name: "Youtube",
+        description: "My youtube. I upload CS2, TF2, and other gaming related content. ",
+        link: "https://www.youtube.com/@phwn"
     },
     {
-        name: "Project 2",
-        description: "This is a description of Project 2.",
-        link: "https://github.com/yourusername/project2"
+        name: "Twitch",
+        description: "I rarely stream but when I do its here.",
+        link: "https://www.twitch.tv/phwnez"
     },
     {
-        name: "Project 3",
-        description: "This is a description of Project 3.",
-        link: "https://github.com/yourusername/project3"
+        name: "Github",
+        description: "Home of the worst Hemp mod for Minecraft",
+        link: "https://github.com/phwnEZ/"
     }
 ];
 
-// Function to display projects
-function displayProjects() {
-    const projectList = document.getElementById('project-list');
 
-    projects.forEach(project => {
+
+// Function to display social
+function displaySocials() {
+    const socialList = document.getElementById('social-list');
+
+    social.forEach(social => {
         const listItem = document.createElement('li');
         listItem.innerHTML = `
-            <a href="${project.link}" target="_blank">${project.name}</a>
-            <p>${project.description}</p>
+            <a href="${social.link}" target="_blank">${social.name}</a>
+            <p>${social.description}</p>
         `;
-        projectList.appendChild(listItem);
+        socialList.appendChild(listItem);
     });
 }
 
-// Call the function to display projects when the page loads
-window.onload = displayProjects;
+// Call the function to display social when the page loads
+window.onload = displaySocials;
