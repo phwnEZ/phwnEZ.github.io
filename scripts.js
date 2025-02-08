@@ -1,4 +1,3 @@
-// Sample social data
 const socials = [
     {
         name: "Youtube",
@@ -33,7 +32,7 @@ const projects = [
 
 // Function to display socials
 function displaySocials() {
-    const socialList = document.getElementById('socials-list');
+    const socialList = document.getElementById('socials-list'); // Match the ID in HTML
 
     socials.forEach(social => {
         const listItem = document.createElement('li');
@@ -47,7 +46,7 @@ function displaySocials() {
 
 // Function to display projects
 function displayProjects() {
-    const projectList = document.getElementById('projects-list');
+    const projectList = document.getElementById('projects-list'); // Match the ID in HTML
 
     projects.forEach(project => {
         const listItem = document.createElement('li');
