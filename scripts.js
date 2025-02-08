@@ -1,3 +1,4 @@
+
 const socials = [
     {
         name: "Youtube",
@@ -16,7 +17,6 @@ const socials = [
     }
 ];
 
-// Sample project data
 const projects = [
     {
         name: "Hemp Mod for Minecraft",
@@ -32,7 +32,12 @@ const projects = [
 
 // Function to display socials
 function displaySocials() {
-    const socialList = document.getElementById('socials-list'); // Match the ID in HTML
+    const socialList = document.getElementById('socials-list'); // Ensure this matches the ID in HTML
+
+    if (!socialList) {
+        console.error("Could not find the element with ID 'socials-list'");
+        return;
+    }
 
     socials.forEach(social => {
         const listItem = document.createElement('li');
@@ -46,7 +51,12 @@ function displaySocials() {
 
 // Function to display projects
 function displayProjects() {
-    const projectList = document.getElementById('projects-list'); // Match the ID in HTML
+    const projectList = document.getElementById('projects-list'); // Ensure this matches the ID in HTML
+
+    if (!projectList) {
+        console.error("Could not find the element with ID 'projects-list'");
+        return;
+    }
 
     projects.forEach(project => {
         const listItem = document.createElement('li');
